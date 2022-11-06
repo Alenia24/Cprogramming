@@ -29,8 +29,8 @@ int main(void) {
   first_sum = d + i2 + i4 + j1 + j3 + j5;
   second_sum = i1 + i3 + i5 + j2 + j4;
   total = 3 * first_sum + second_sum;
-
-  printf("Check digit: %d\n", 10 - ((total - 1) % 10));  
+  
+  printf("Check digit: %d\n", 10 - (total % 10));  
 
   return 0;
 }
@@ -40,8 +40,8 @@ int main(void) {
   Enter the first (single) digit: 0     
   Enter first group of five digits: 13800
   Enter second group of five digits: 15173
-  Check digit: 6
+  Check digit: 5
   
   Explanation:
-  This technique would not work.
+  This technique does work.
 */
