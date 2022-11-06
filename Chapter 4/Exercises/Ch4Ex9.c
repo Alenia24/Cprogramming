@@ -27,7 +27,7 @@ int main(void) {
   i *= j + 1;
   printf("%d %d\n", i, j);
 
-  i = j; k = 1;
+  i = j = k = 1;
   i += j += k;
   printf("%d %d %d\n", i, j, k);
 
@@ -45,7 +45,7 @@ int main(void) {
 /*
   Output:
   (a) 63 8
-  (b) 17 9 1
+  (b) 3 2 1
   (c) 2 -1 3
   (d) 0 0 0
 */
